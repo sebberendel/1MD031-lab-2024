@@ -1,64 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
-    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-p {
-    color: red;
-}
-
-h1 {
-    font-family: 'Agbalumo';
-    font-size: 36pt;
-}
-main, header, footer, nav ul {
-    max-width: 40rem;
-    margin: 0 auto 0 auto;
-}
-main {
-    background-color: bisque;
-}
-
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
-
-header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 200px;
-    opacity: 0.5;
-}
-
-header h1 {
-    width:40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 9.25em);
-    gap: 1em;
-    padding: 0;
-}
-
-nav li {
+body:before {
+    background-image: url("https://i.pinimg.com/736x/c8/16/e1/c816e160d188190d6e2c03ed9fde549e.jpg");
+    background-size: 40px 40px;
+    
+    content: "";
     display: block;
-    background-color: grey;
-    padding: 1em;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 80%;
 }
-
-.Very-good {
-    color: green;
-}
-
-.Master {
-    color: green;
+.allergies {
+    color: #841003;
     font-weight: bold;
+}
+/* Welcome sign */
+#welcome {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(249, 193, 89, 0.75);
+    margin: 20px 330px 20px 330px;
+    border-radius: 15px;
+}
+/* Menu */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: rgb(249, 193, 89);
+    border-width: 3px;
+}
+
+#menu nav {
+    font-size: 24px;
+    font-weight: bold;  
+    color: rgb(249, 193, 89);   
+    margin-bottom: 10px;      
+}
+
+#menu .menu-items {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 280px 280px 280px 280px;
+    justify-content: center;  
+    color: #444;
+}
+
+#menu .menu-items div {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(249, 193, 89);
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;         
+}
+#menu .menu-items div img {
+    width: 100%;        
+    height: 200px;    
+    object-fit: cover;            
+    border-radius: 5px;           
+}
+#menu h2 {
+    font-size: 18px; 
+    margin: 10px 0; 
+}
+
+/* Info */
+#info {
+    background-color: rgb(249, 193, 89, 0.75);
+    border-radius: 15px;
+    border-color: black;
+    border-style: dashed;
+    border-width: 2px;
+}
+section {
+    margin: 30px 20px 30px 20px;
+    padding: 1px 10px 10px;
+}
+#btn-submit{
+    margin-top: 5px;
+}
+#btn-submit:hover {
+    cursor: pointer; 
+    background-color: #f96419; 
 }
