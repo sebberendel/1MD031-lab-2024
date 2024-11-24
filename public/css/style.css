@@ -20,13 +20,53 @@ body:before {
     font-weight: bold;
 }
 /* Welcome sign */
+/* Welcome sign */
+/* Welcome sign */
 #welcome {
+    position: relative; /* Position the container for overlay and text */
     text-align: center;
-    font-size: 30px;
-    background-color: rgb(249, 193, 89, 0.75);
-    margin: 20px 330px 20px 330px;
-    border-radius: 15px;
+    height: 150px; /* Set a fixed height for the header */
+    overflow: hidden; /* Prevent content spill */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+    display: inline-block; /* Shrink to fit content width */
+    padding: 0px 200px; /* Add padding around the text */
+    margin: 15px 20px 0px 500px; /* Center the header horizontally */
 }
+
+.welcome-background {
+    width: 100%; /* Match the container width */
+    height: 100%; /* Cover the full height of the container */
+    object-fit: cover; /* Ensure the image covers the area */
+    position: absolute; /* Allow flexibility for centering */
+    top: 0; /* Align with the top of the container */
+    left: 0; /* Align with the left of the container */
+    border-radius: 15px; /* Match the border radius of the container */
+    opacity: 0.7; /* Set transparency */
+    z-index: 1; /* Ensure it sits behind the text */
+}
+
+.welcome-overlay {
+    position: absolute; /* Overlay above the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Flexbox for centering text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-radius: 15px; /* Match the border radius of the container */
+}
+
+.welcome-sign {
+    color: white; /* Keep the text color white */
+    font-size: 36px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+    z-index: 2; /* Ensure text is on top */
+}
+
+
 /* Menu */
 #menu {
     display: flex;

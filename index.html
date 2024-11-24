@@ -1,108 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-       <title>Macdonald burgers</title>
-       <meta charset="utf-8"/>
-       <link rel="stylesheet" type="text/css" href="/css/style.css">
-   </head>
-
-   <body>
-    <header id = "welcome">
-        <h1>Welcome to Macdonald!</h1>
-    </header>
-    
-
-    <section id="menu">
-        <nav>Menu:</nav>
-        <div class="menu-items">
-            <div>
-                <h2>The perfect burger</h2>
-                <img src="https://www.beercheese.com/wp-content/uploads/2021/04/Halls-Dirty-Burger-2.jpeg" alt="Span" title="Perfect">
-                <ul title="Allergic?" class="allergies">
-                    <li>Peanut</li>
-                    <li>Walnut</li>
-                    <li>Chestnut</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Juicy burger</h2>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/4c/91/bd/bacon-cheeseburger.jpg" alt="Span" title="Juicy">
-                <ul title="Allergic?" class="allergies">
-                    <li>Corn</li>
-                    <li>Wheat</li>
-                    <li>Potato</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Fresh burger</h2>
-                <img src="https://nyceats.files.wordpress.com/2008/05/island-burger-005.jpg" alt="Span" title="Juicy">
-                <ul title="Allergic?" class="allergies">
-                    <li>Meat</li>
-                    <li>Bread</li>
-                    <li>Greenery</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Store burger</h2>
-                <img src="https://www.businessclass.com/forum/data/attachments/141/141306-e116fb80240539ebce1e1f73d425b587.jpg" alt="Span" title="Juicy">
-                <ul title="Allergic?" class="allergies">
-                    <li>Plastic</li>
-                    <li>Chemicals</li>
-                    <li>Factory air</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id = "info">
-        <form>
-            <h2>Contact information:</h2>
-            <p>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="fn" required="required" placeholder="Arne Kajser">
-            </p>
-            <p>
-                <label for="email">E-post</label><br>
-                <input type="email" id="email" name="em" required="required" placeholder="arne.kaiser@sts.com">
-            </p>
-            <p>
-                <label for="street">Street</label><br>
-                <input type="text" id="street" name="str" placeholder="Ringvägen">
-            </p>
-            <p>
-                <label for="streetnumber">Street Number</label><br>
-                <input type="number" id="streetnumber" name="strnr" placeholder="12">
-            </p>
-            <p>
-                <input type="radio" id = "male" name="gn">
-                <label for="male">Male</label><br>
-
-                <input type="radio" id = "female" name="gn">
-                <label for="female">Female</label><br>
-
-                <input type="radio" id = "other" name="gn">
-                <label for="other">Other</label><br>
-            </p>
-            <p>
-                <label for="paymentmethod">Payment method</label><br>
-                <select id="paymentmethod" name="pm" >
-                    <option>VISA</option>
-                    <option selected="selected">Paypal</option>
-                    <option>Master Card</option>
-                    <option>American Express</option>
-                    <option>Ali Express</option>
-                </select>
-            </p>
-        </form>
-
-        <button id = "btn-submit" type="submit">Submit!</button>
-
-    </section>
-    
-    <hr>
-
-    <footer>
-        Burger King foot lettuce
-    </footer>
-   </body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

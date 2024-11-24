@@ -1,21 +1,30 @@
-[{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
-},
-{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
-},
-{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
-}]
+[
+    {
+        "itemName": "The perfect burger", 
+        "imgURL": "https://www.beercheese.com/wp-content/uploads/2021/04/Halls-Dirty-Burger-2.jpeg", 
+        "kcal":500, 
+        "gluten":true, 
+        "lactos":true
+    },
+    {
+        "itemName":"Juicy burger", 
+        "imgURL":"https://media-cdn.tripadvisor.com/media/photo-s/1c/4c/91/bd/bacon-cheeseburger.jpg", 
+        "kcal":400, 
+        "gluten":true, 
+        "lactos":false
+    },
+    {
+        "itemName": "Raw burger", 
+        "imgURL":"https://nyceats.files.wordpress.com/2008/05/island-burger-005.jpg", 
+        "kcal": 600, 
+        "gluten":true, 
+        "lactos":false
+    },
+    {
+        "itemName":"Store burger", 
+        "imgURL":"https://www.businessclass.com/forum/data/attachments/141/141306-e116fb80240539ebce1e1f73d425b587.jpg", 
+        "kcal":100, 
+        "gluten":true, 
+        "lactos":false
+    }
+]
