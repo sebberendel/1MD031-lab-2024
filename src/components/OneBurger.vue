@@ -5,9 +5,9 @@
     <h3 id="kcal">({{ burger.kcal }} kCal)</h3>
     <ul title="Allergic?" class="allergies">
       <li v-if="burger.gluten">Contains gluten</li>
-      <li v-else></li>
+      <br v-else>
       <li v-if="burger.lactos">Contains lactose</li>
-      <li v-else></li>
+      <br v-else>
     </ul>
 
     <div id="amount">
@@ -24,6 +24,7 @@ export default {
   props: {
     burger: Object,
     required: true
+    
   },
   data: function () {
     return {
@@ -32,7 +33,9 @@ export default {
   },
   methods: {
     decreaseAmount: function () {
+      if (this.amountOrdered > 0) {
       this.amountOrdered -= 1;
+      }
       this.$emit('addedBurger', { name:this.burger.itemName,
                                     amount: this.amountOrdered
                                   })

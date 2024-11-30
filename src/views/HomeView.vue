@@ -100,8 +100,8 @@
           payMethod: ""
         },
         orderedBurgers: {},
-        location: { x: 0,
-                    y: 0
+        location: { x: -20,
+                    y: -20
         }
       }
     },
@@ -141,11 +141,12 @@
                                 }
                    );
 
-        // Clear form:
+        // Clear inputs:
         this.formValues.name = "";
         this.formValues.email = "";
         this.formValues.gender = "";
         this.formValues.payMethod = "";
+        this.location = {x:-20, y:-20};
       }
     }
   }
